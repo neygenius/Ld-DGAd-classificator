@@ -18,6 +18,7 @@
 /legit_features.csv
 /legit_nan.csv
 /models
+/model_artifact.json
 /model_testing.ipynb
 /ngram.py
 /ngrams
