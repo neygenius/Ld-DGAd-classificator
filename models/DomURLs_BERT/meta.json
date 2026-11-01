@@ -1,0 +1,35 @@
+{
+  "base_model": "amahdaouy/DomURLs_BERT",
+  "n_params": 110618113,
+  "best_val_ap": 0.9973087488234186,
+  "train_time_s": 46018.605018300004,
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3
+    ],
+    "train_loss": [
+      0.06372780668672376,
+      0.046570326510069114,
+      0.04269513713005632
+    ],
+    "val_ap": [
+      0.9973087488234186,
+      0.9971642643947578,
+      0.9968422077611413
+    ]
+  },
+  "thresholds": {
+    "fpr_1e-3": 0.998054027557373,
+    "recall_0.95": 0.9587758779525757
+  },
+  "training": {
+    "max_epochs": 5,
+    "patience": 2,
+    "batch_size": 16,
+    "lr": 2e-05,
+    "max_len": 75,
+    "criterion": "val_average_precision"
+  }
+}

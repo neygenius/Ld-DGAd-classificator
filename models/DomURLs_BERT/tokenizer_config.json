@@ -1,0 +1,19 @@
+{
+  "backend": "tokenizers",
+  "clean_up_tokenization_spaces": true,
+  "cls_token": "[CLS]",
+  "extra_special_tokens": [
+    "[DOMAIN]",
+    "[PATH]",
+    "[IP]",
+    "[IPv6]"
+  ],
+  "is_local": false,
+  "local_files_only": false,
+  "mask_token": "[MASK]",
+  "model_max_length": 1024,
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "tokenizer_class": "TokenizersBackend",
+  "unk_token": "[UNK]"
+}

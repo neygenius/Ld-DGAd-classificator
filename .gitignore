@@ -1,4 +1,5 @@
 /.ruff_cache
 /.old
+/bert_dga
 /nirs
 /dataset_*.csv

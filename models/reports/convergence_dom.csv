@@ -1,0 +1,2 @@
+model,epochs_run,cap,status,best_val_ap,train_time_min
+DomURLs_BERT,3,5,early_stop,0.9973087488234186,766.9767503050001
