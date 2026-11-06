@@ -1,0 +1,9 @@
+{
+  "model": "MLP",
+  "n_features": 130,
+  "epochs_run": 42,
+  "stopped_reason": "plateau",
+  "ap_at_30": 0.9761242038783583,
+  "ap_at_plateau": 0.9769317747987025,
+  "gap_pp": 0.0807570920344225
+}

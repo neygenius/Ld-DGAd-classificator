@@ -270,10 +270,10 @@
   "thresholds": {
     "CustomLogReg": 0.9690151614223179,
     "SkLogReg": 0.9768825769424438,
-    "RandomForest": 0.934691364543042,
+    "RandomForest": 0.9346913645430421,
     "LightGBM": 0.9702913720482074,
     "XGBoost": 0.9725454449653625,
-    "MLP": 0.9769136309623718,
+    "MLP": 0.9759569764137268,
     "CharCNN-Small": 0.9991845488548279,
     "CharCNN-Medium": 0.9408077597618103,
     "CharBERT-Small": 0.99437016248703,
@@ -293,6 +293,16 @@
   ],
   "target_fpr_val": 0.001,
   "seed": 42,
+  "production_candidates": [
+    "LightGBM",
+    "XGBoost",
+    "MLP"
+  ],
+  "explored_models": [
+    "CustomLogReg",
+    "SkLogReg",
+    "RandomForest"
+  ],
   "metrics_id": {
     "CustomLogReg": {
       "accuracy": 0.691158,
@@ -390,23 +400,23 @@
       "prec@prev=0.0001": 0.060334
     },
     "MLP": {
-      "accuracy": 0.825008,
-      "precision": 0.997918,
-      "recall": 0.615579,
-      "f1": 0.761448,
-      "roc_auc": 0.976842,
-      "pr_auc": 0.975499,
-      "tpr": 0.615579,
-      "fpr": 0.001067,
-      "fp_per_million": 1066.730671,
-      "brier": 0.058572,
-      "tpr@fpr=1e-2": 0.759288,
-      "tpr@fpr=1e-3": 0.606989,
-      "tpr@fpr=1e-4": 0.382936,
-      "prec@rec=0.95": 0.847849,
-      "prec@rec=0.99": 0.695696,
-      "prec@prev=0.001": 0.366145,
-      "prec@prev=0.0001": 0.054564
+      "accuracy": 0.828774,
+      "precision": 0.997869,
+      "recall": 0.623928,
+      "f1": 0.767788,
+      "roc_auc": 0.977757,
+      "pr_auc": 0.976442,
+      "tpr": 0.623928,
+      "fpr": 0.001107,
+      "fp_per_million": 1106.733071,
+      "brier": 0.057409,
+      "tpr@fpr=1e-2": 0.766931,
+      "tpr@fpr=1e-3": 0.616904,
+      "tpr@fpr=1e-4": 0.397587,
+      "prec@rec=0.95": 0.853407,
+      "prec@rec=0.99": 0.701449,
+      "prec@prev=0.001": 0.360745,
+      "prec@prev=0.0001": 0.053372
     },
     "CharCNN-Small": {
       "accuracy": 0.917430023128335,
@@ -582,23 +592,23 @@
       "prec@prev=0.0001": 0.054149
     },
     "MLP": {
-      "accuracy": 0.777986,
-      "precision": 0.998383,
-      "recall": 0.582533,
-      "f1": 0.735765,
-      "roc_auc": 0.946715,
-      "pr_auc": 0.963052,
-      "tpr": 0.582533,
-      "fpr": 0.001067,
-      "fp_per_million": 1066.730671,
-      "brier": 0.086772,
-      "tpr@fpr=1e-2": 0.72014,
-      "tpr@fpr=1e-3": 0.572772,
-      "tpr@fpr=1e-4": 0.274446,
-      "prec@rec=0.95": 0.743725,
-      "prec@rec=0.99": 0.563772,
-      "prec@prev=0.001": 0.353437,
-      "prec@prev=0.0001": 0.051786
+      "accuracy": 0.780787,
+      "precision": 0.998337,
+      "recall": 0.587847,
+      "f1": 0.739977,
+      "roc_auc": 0.946204,
+      "pr_auc": 0.962943,
+      "tpr": 0.587847,
+      "fpr": 0.001107,
+      "fp_per_million": 1106.733071,
+      "brier": 0.087091,
+      "tpr@fpr=1e-2": 0.724663,
+      "tpr@fpr=1e-3": 0.579915,
+      "tpr@fpr=1e-4": 0.288076,
+      "prec@rec=0.95": 0.739604,
+      "prec@rec=0.99": 0.561923,
+      "prec@prev=0.001": 0.347125,
+      "prec@prev=0.0001": 0.050441
     },
     "CharCNN-Small": {
       "accuracy": 0.8176481081030333,
@@ -679,63 +689,63 @@
   },
   "latency": {
     "CustomLogReg": {
-      "single_ms": 0.035280799958854914,
-      "batch_1024_s": 0.0008828699996229261,
-      "throughput_domains_s": 1159853.6595844808,
-      "model_size_mb": 0.004299
+      "single_ms": 0.04319750005379319,
+      "batch_1024_s": 0.0009359699906781316,
+      "throughput_domains_s": 1094052.1706877467,
+      "model_size_mb": 0.004331
     },
     "SkLogReg": {
-      "single_ms": 0.8051134999841452,
-      "batch_1024_s": 0.0010345200018491596,
-      "throughput_domains_s": 989831.0309802076,
+      "single_ms": 0.8026155002880841,
+      "batch_1024_s": 0.0009660350042395294,
+      "throughput_domains_s": 1060002.9973097104,
       "model_size_mb": 0.005081
     },
     "RandomForest": {
-      "single_ms": 29.161859299987555,
-      "batch_1024_s": 0.02887786499923095,
-      "throughput_domains_s": 35459.6851265587,
-      "model_size_mb": 68.254249
+      "single_ms": 28.894986999221146,
+      "batch_1024_s": 0.02875967000145465,
+      "throughput_domains_s": 35605.41549844649,
+      "model_size_mb": 68.254473
     },
     "LightGBM": {
-      "single_ms": 1.3654044999275357,
-      "batch_1024_s": 0.016901105002034456,
-      "throughput_domains_s": 60587.75446201517,
-      "model_size_mb": 10.48282
+      "single_ms": 1.3504480000119656,
+      "batch_1024_s": 0.01726241500582546,
+      "throughput_domains_s": 59319.62588400498,
+      "model_size_mb": 10.482852
     },
     "XGBoost": {
-      "single_ms": 4.5724499999778345,
-      "batch_1024_s": 0.012909045000560582,
-      "throughput_domains_s": 79324.22576228778,
+      "single_ms": 4.111780999228358,
+      "batch_1024_s": 0.012292175006587058,
+      "throughput_domains_s": 83305.02937448132,
       "model_size_mb": 10.410773
     },
     "MLP": {
-      "single_ms": 0.8314415999921039,
-      "batch_1024_s": 0.020028029999230056,
-      "throughput_domains_s": 51128.343628373135,
-      "model_size_mb": 0.280836
+      "single_ms": 0.9823939995840191,
+      "batch_1024_s": 0.01968594000209123,
+      "throughput_domains_s": 52016.82012091985,
+      "model_size_mb": 0.278996
     },
     "CharCNN-Small": {
-      "single_ms": 0.7601750001776963,
-      "batch_1024_s": 0.12403564000269399,
-      "throughput_domains_s": 8255.691670376025,
+      "single_ms": 0.7417160004843026,
+      "batch_1024_s": 0.11828642499167472,
+      "throughput_domains_s": 8656.952816623476,
       "model_size_mb": 0.739093
     },
     "CharCNN-Medium": {
-      "single_ms": 1.877474000211805,
-      "batch_1024_s": 0.4409859549952671,
-      "throughput_domains_s": 2322.069418312858,
+      "single_ms": 1.539939499925822,
+      "batch_1024_s": 0.3753117949934676,
+      "throughput_domains_s": 2728.3981309935193,
       "model_size_mb": 5.047677
     },
     "CharBERT-Small": {
-      "single_ms": 1.4803075010422617,
-      "batch_1024_s": 0.4737355199991725,
-      "throughput_domains_s": 2161.5436393745367,
+      "single_ms": 1.4724379999097437,
+      "batch_1024_s": 0.40590515501098706,
+      "throughput_domains_s": 2522.7568247372524,
       "model_size_mb": 0.874641
     },
     "CharBERT-Medium": {
-      "single_ms": 2.8455620002932847,
-      "batch_1024_s": 1.3835105500067584,
-      "throughput_domains_s": 740.146144888449,
+      "single_ms": 2.775072999065742,
+      "batch_1024_s": 1.2488017749972642,
+      "throughput_domains_s": 819.986022202958,
       "model_size_mb": 4.895518
     }
   },
